@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercise 02</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- EXERCICI 3 -->
+    <h1>Taula de propietats</h1>
+    <div id="taula_propietats"></div>
+
+    <!-- EXERCICI 4 -->
+    <h1>Compte enrere</h1>
+
+    <p>Selecciona el temps del compte enrere: </p>
+    <div class="input_container">
+        <input type="number" id="min" placeholder="Minuts" min="0" max="59">
+        <input type="number" id="sec" placeholder="Segons" min="0" max="59">
+    </div>
+    <br>
+    <div class="timer_display" id="timer_display">00:00</div>
+    <br>
+    <div class="buttons">
+        <button id="start_btn">Inicia</button>
+        <button id="pause_btn">Pausa</button>
+        <button id="continue_btn">Reanuda</button>
+        <button id="reset_btn">Reinicia</button>
+    </div>
+
+    <audio id="alarm_sound" src="alarm.mp3"></audio>
+
+    <br>
+    <button id="stop_btn">Atura</button>
+
+    <!-- EXERCICI 5 -->
+    <h1>Rellotge</h1>
+    <div id="clock"></div>
+
+    <h3>Alarma</h3>
+
+    <label for="alarm_time">Hora:</label>
+    <input type="time" id="alarm_time">
+
+    <br><br>
+
+    <label for="sound">So:</label>
+    <select id="sound">
+        <option value="alarm.mp3">Alarm</option>
+        <option value="teneneng.mp3">Teneneng</option>
+        <option value="bubbles.mp3">Bubbles</option>
+    </select>
+
+    <button id="play_sound_btn">Reproduir</button>
+    <button id="stop_sound_btn">Atura</button>
+
+    <br><br>
+
+    <label for="vol_ctrl">Volum:</label>
+    <input type="range" id="vol_ctrl" min="0" max="1" step="0.1" value="0.5">
+
+    <br><br>
+
+    <div class="buttons">
+        <button id="save_btn">Guardar</button>
+        <button id="delete_btn">Eliminar</button>
+        <button id="stop_btn_2">Atura</button>
+    </div>
+
+    <br>
+
+    <div id="alarm_saved"></div>
+
+    <audio id="audio"></audio>
+    </div>
+
+</body>
+
+</html>
